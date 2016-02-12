@@ -1,0 +1,198 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+// *:focus {outline:none;}
+
+* {box-sizing: border-box;}
+
+.float_left {float: left;}
+
+.float_right {float: right;}
+
+.vertical_center {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+a:link {text-decoration: none;}
+
+a:visited {text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+a:active {text-decoration: underline;}
+
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+}
+
+.col-1 {float: left; width: 8.33%;}
+.col-2 {float: left; width: 16.66%;}
+.col-3 {float: left; width: 25%;}
+.col-4 {float: left; width: 33.33%;}
+.col-5 {float: left; width: 41.66%;}
+.col-6 {float: left; width: 50%;}
+.col-7 {float: left; width: 58.33%;}
+.col-8 {float: left; width: 66.66%;}
+.col-9 {float: left; width: 75%;}
+.col-10 {float: left; width: 83.33%;}
+.col-11 {float: left; width: 91.66%;}
+.col-12 {float: left; width: 100%;}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+.row {
+  width: 100%;
+}
+
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+// ----------------------------------------------------------------
+
+@orange: #FF7E00;
+
+body {
+  background-color: #363C5E;
+}
+
+.unu {
+  text-align: center;
+  font-family: 'Roboto';
+  width: 640px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.doi {
+  .logo {
+    background-image: url(../images/logo.jpg);
+    width: 119px;
+    height: 59px;
+    margin: 0 auto;
+  }
+
+  .discountTitle {
+    margin: 10px 0 60px;
+    letter-spacing: 1px;
+
+    h1 {
+      font-size: 40px;
+      color: #fff;
+      font-weight: 100;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 100
+    }
+  }
+
+  .car {
+    background-image: url(../images/car.png);
+    background-size: 510px 270px;
+    width: 510px;
+    height: 270px;
+
+    .discountInfo {
+      padding: 44px;
+
+      h1 {
+        color: @orange;
+        font-weight: 300;
+        font-size: 62px;
+        line-height: 62px;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      h2 {
+        color: #66697C;
+        font-weight: 300;
+        font-size: 23px;
+        letter-spacing: 0.3px;
+
+        span {
+          font-size: 14px;
+          position: relative;
+          top: -8px;
+        }
+      }
+
+      h3 {
+        color: #66697C;
+        font-weight: 500;
+        border-top: 1px solid #DFDFE1;
+        padding-top: 15px;
+        margin-top: 15px;
+
+        span {
+          color: @orange;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .submit {
+    width: 130px;
+    height: 270px;
+    background-color: @orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    .arrowRight {
+      background-image: url(../images/arrow.png);
+      background-size: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 12px;
+    }
+
+  }
+}
